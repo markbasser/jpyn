@@ -26,147 +26,147 @@ async def on_message(message):
     if message.author.bot:  # ボットのメッセージをハネる
         return
 
-    if message.content == "goodmorning":
+    if message.content == "GoodMorning":
         # チャンネルへメッセージを送信
         await message.channel.send(f"{message.author.mention}さん Good morning")  # f文字列（フォーマット済み文字列リテラル）
         
-    if message.content == "goodnight":
+    if message.content == "GoodNight":
         # チャンネルへメッセージを送信
         await message.channel.send(f"{message.author.mention}さん Good Night! Go to bed early♡")  # f文字列（フォーマット済み文字列リテラル）
 
-    if message.content == "おはよう":
+    if message.content == "おはようさん":
         # チャンネルへメッセージを送信
         await message.channel.send(f"{message.author.mention}さん ☆おはようございます☆")  # f文字列（フォーマット済み文字列リテラル）
         
-    if message.content == "goodevening":
+    if message.content == "Goodevening":
         # チャンネルへメッセージを送信
         await message.channel.send(f"{message.author.mention}さん　Good evening～☆" )  # f文字列（フォーマット済み文字列リテラル）
 
-    if message.content == "Hello":
+    if message.content == "Hello!":
         # チャンネルへメッセージを送信
         await message.channel.send(f"{message.author.mention} ☆༺.Hello All.Everyone! Thank you!☆")  # f文字列（フォーマット済み文字列リテラル）
  
-    if message.content == "こんにちは":
+    if message.content == "こんにちわ":
         # チャンネルへメッセージを送信
         await message.channel.send(f"{message.author.mention}さん こんにちは☺️楽しんで！")  # f文字列（フォーマット済み文字列リテラル）
 
 
-    if message.content == "こんばんは":
+    if message.content == "こんばんわ":
         # チャンネルへメッセージを送信
         await message.channel.send(f"{message.author.mention}さん こんばんは😃🌃早く休みましょう🎵")  # f文字列（フォーマット済み文字列リテラル）
 
-    if message.content == "おはよー":
+    if message.content == "おはよーさん":
         # チャンネルへメッセージを送信
         await message.channel.send(f"{message.author.mention}さん GoodMorning♡")  # f文字列（フォーマット済み文字列リテラル）
 
-    if message.content == "おやすみなさい":
+    if message.content == "おやすみなさいませ":
         # チャンネルへメッセージを送信
         await message.channel.send(f"{message.author.mention}さん Good Night! Have a good dream♡")  # f文字列（フォーマット済み文字列リテラル）
 
 
        
-    elif message.content == "hi":
+    elif message.content == "hiyo":
         # リアクションアイコンを付けたい
         q = await message.channel.send("Are you a cryptocurrency fan?")
         [await q.add_reaction(i) for i in ('⭕', '❌')]  # for文の内包表記
 
                 
-    elif message.content == "RAIN":
+    elif message.content == "RAI":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /rain JPYN 5.5 ActiveUserOnly ☔It Rains")
         [await q.add_reaction(i) for i in ('☂', '⛈')]  # for文の内包表記
         
-    elif message.content == "language":
+    elif message.content == "langu":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /language EN 🔑")
         [await q.add_reaction(i) for i in ('⭕', '❌')]  # for文の内包表記
 
                 
-    elif message.content == "help":
+    elif message.content == "hel":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /help ←Uzuras Wallet Help")
         [await q.add_reaction(i) for i in ('⭕', '🔑')]  # for文の内包表記
 
         
-    elif message.content == "info":
+    elif message.content == "inf":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /info ben 残高")
         [await q.add_reaction(i) for i in ('↺', '↷')]  # for文の内包表記
 
         
-    elif message.content == "rain":
+    elif message.content == "HELLO":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /rain BEN 7.77 ActiveUserOnly ☔It Rains")
         [await q.add_reaction(i) for i in ('☔', '⛈')]  # for文の内包表記
         
         
-    elif message.content == "TIP":
+    elif message.content == "JPYN":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /tip JPYN 1.14 "f"{message.author.mention}さん gave you a Tip＄")
         [await q.add_reaction(i) for i in ('💲', '☺')]  # for文の内包表記
   
         
-    elif message.content == "tip":
+    elif message.content == "ti":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /tip ben 2 "f"{message.author.mention}さん gave you a Tip＄")
         [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
         
            
-    elif message.content == "$tip":
+    elif message.content == "$JPYN":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /tip JPYN 1.1 "f"{message.author.mention}さん gave you a Tip＄")
         [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
   
 
-    elif message.content == "throw":
+    elif message.content == "JAPAN":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /throw JPYN 5 3 EquallyDistributed ☞/catchで受け取ってください⚾")
         [await q.add_reaction(i) for i in ('⚾', '✋')]  # for文の内包表記
 
         
-    elif message.content == ".throw":
+    elif message.content == ".th":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /throw BEN 10 4 EquallyDistributed ☞/catchで受け取ってください⚾")
         [await q.add_reaction(i) for i in ('⚾', '✋')]  # for文の内包表記
 
         
-    elif message.content == "$throw":
+    elif message.content == "$th":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /throw BGPT 30 3 EquallyDistributed ☞/catchで受け取ってください⚾")
         [await q.add_reaction(i) for i in ('⚾', '✋')]  # for文の内包表記
 
         
-    elif message.content == "/tip":
+    elif message.content == "/t":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /tip JPYN 1 "f"{message.author.mention}さん gave you a Tip＄")
         [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
 
 
-    elif message.content == "/info":
+    elif message.content == "/io":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /tip BGPT 10 "f"{message.author.mention}さん gave you a Tip＄")
         [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
 
 
-    elif message.content == "/rain":
+    elif message.content == "/r":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /rain JPYN 6 ActiveUserOnly ☔It Rains")
         [await q.add_reaction(i) for i in ('☔', '⛈')]  # for文の内包表記
 
         
-    elif message.content == "$rain":
+    elif message.content == "$r":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /rain BGPT 10 ActiveUserOnly ☔It Rains")
         [await q.add_reaction(i) for i in ('☔', '⛈')]  # for文の内包表記
     
         
-    elif message.content == "/RAIN":
+    elif message.content == "/R":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /rain BGPT 50 ActiveUserOnly ☔It Rains")
         [await q.add_reaction(i) for i in ('☔', '⛈')]  # for文の内包表記
 
 
-    elif message.content == "balance":
+    elif message.content == "bal":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /info jpyn ←Fill in this balance")
         [await q.add_reaction(i) for i in ('↺', '↷')]  # for文の内包表記
@@ -185,9 +185,9 @@ async def on_message(message):
         
         
 
-    elif message.content == "おみくじ":
+    elif message.content == "運勢":
         # Embedを使ったメッセージ送信 と ランダムで要素を選択
-        embed = discord.Embed(title="おみくじ", description=f"{message.author.mention}さんの今日の運勢は！",
+        embed = discord.Embed(title="おみ", description=f"{message.author.mention}さんの今日の運勢は！",
                               color=0x2ECC69)
         embed.set_thumbnail(url=message.author.avatar_url)
         embed.add_field(name="[GAME運勢YourFortune] ",
@@ -199,7 +199,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
 
-    elif message.content == "omikuji":
+    elif message.content == "Fortune":
         # Embedを使ったメッセージ送信 と ランダムで要素を選択
         embed = discord.Embed(title="☆OMIKUJI☆", description=f"{message.author.mention}Today!YourFortune!☆",
                               color=0x2ECC69)
@@ -214,10 +214,6 @@ async def on_message(message):
 
 
 
-    elif message.content == "!ダイレクトメッセージ":
-        # ダイレクトメッセージ送信
-        dm = await message.author.create_dm()
-        await dm.send(f"{message.author.mention}さん Benkeis TwitchTV🎮 Followお願いね！ https://www.twitch.tv/benkeis ")
 
 
 client.run(token)
