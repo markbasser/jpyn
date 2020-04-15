@@ -65,15 +65,15 @@ async def on_message(message):
 
 
        
-    elif message.content == "hiyo":
+    elif message.content == "uzurauzura":
         # リアクションアイコンを付けたい
-        q = await message.channel.send("Are you a cryptocurrency fan?")
+        q = await message.channel.send(" /link")
         [await q.add_reaction(i) for i in ('⭕', '❌')]  # for文の内包表記
 
                 
-    elif message.content == "RAI":
+    elif message.content == "uzurauzura2":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain JPYN 5.5 ActiveUserOnly ☔It Rains")
+        q = await message.channel.send(" /accept")
         [await q.add_reaction(i) for i in ('☂', '⛈')]  # for文の内包表記
         
     elif message.content == "langu":
