@@ -34,9 +34,9 @@ async def on_message(message):
         # チャンネルへメッセージを送信
         await message.channel.send(f"{message.author.mention}さん Good Night! Go to bed early♡")  # f文字列（フォーマット済み文字列リテラル）
 
-    if message.content == "おはようさん":
+    if message.content == "Mornin":
         # チャンネルへメッセージを送信
-        await message.channel.send(f"{message.author.mention}さん ☆おはようございます☆")  # f文字列（フォーマット済み文字列リテラル）
+        await message.channel.send(f"{message.author.mention}さん ☆おはようございます☆Good morning!")  # f文字列（フォーマット済み文字列リテラル）
         
     if message.content == "Goodevening":
         # チャンネルへメッセージを送信
@@ -44,7 +44,7 @@ async def on_message(message):
 
     if message.content == "Hello!":
         # チャンネルへメッセージを送信
-        await message.channel.send(f"{message.author.mention} ☆༺.Hello All.Everyone! Thank you!☆")  # f文字列（フォーマット済み文字列リテラル）
+        await message.channel.send(f"{message.author.mention} ☆༺.Hello All.Everyone! Thank you!🤩")  # f文字列（フォーマット済み文字列リテラル）
  
     if message.content == "こんにちわ":
         # チャンネルへメッセージを送信
@@ -65,33 +65,33 @@ async def on_message(message):
 
 
        
-    elif message.content == "uzurauzura":
+    elif message.content == "benzan":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /link")
+        q = await message.channel.send(" /info ben")
         [await q.add_reaction(i) for i in ('⭕', '❌')]  # for文の内包表記
 
                 
-    elif message.content == "uzurauzura2":
+    elif message.content == "bgptzan":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /accept")
+        q = await message.channel.send(" /info bgpt")
         [await q.add_reaction(i) for i in ('☂', '⛈')]  # for文の内包表記
         
-    elif message.content == "langu":
+    elif message.content == "jpynzan":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /language EN 🔑")
+        q = await message.channel.send(" /info jpyn")
         [await q.add_reaction(i) for i in ('⭕', '❌')]  # for文の内包表記
 
                 
-    elif message.content == "hel":
+    elif message.content == "%RAIN":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /help ←Uzuras Wallet Help")
-        [await q.add_reaction(i) for i in ('⭕', '🔑')]  # for文の内包表記
+        q = await message.channel.send(" /rain JPYN 7.77 ActiveUserOnly 🌈It Rains")
+        [await q.add_reaction(i) for i in ('☔', '🌈')]  # for文の内包表記
 
         
-    elif message.content == "inf":
+    elif message.content == "%rain":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /info ben 残高")
-        [await q.add_reaction(i) for i in ('↺', '↷')]  # for文の内包表記
+        q = await message.channel.send("  /rain JPYN 10 ActiveUserOnly 🌈It Rains")
+        [await q.add_reaction(i) for i in ('🌈', '☔')]  # for文の内包表記
 
         
     elif message.content == "HELLO":
@@ -106,7 +106,7 @@ async def on_message(message):
         [await q.add_reaction(i) for i in ('💲', '☺')]  # for文の内包表記
   
         
-    elif message.content == "ti":
+    elif message.content == "BEN":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /tip ben 2 "f"{message.author.mention}さん gave you a Tip＄")
         [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
@@ -114,35 +114,35 @@ async def on_message(message):
            
     elif message.content == "$JPYN":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip JPYN 1.1 "f"{message.author.mention}さん gave you a Tip＄")
+        q = await message.channel.send(" /tip JPYN 3 "f"{message.author.mention}さん gave you a Tip＄")
         [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
   
 
     elif message.content == "JAPAN":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /throw JPYN 5 3 EquallyDistributed ☞/catchで受け取ってください⚾")
+        q = await message.channel.send(" /throw JPYN 6 3 EquallyDistributed  Please receive⚾with☞/catch")
         [await q.add_reaction(i) for i in ('⚾', '✋')]  # for文の内包表記
 
         
-    elif message.content == ".th":
+    elif message.content == ".BEN":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /throw BEN 10 4 EquallyDistributed ☞/catchで受け取ってください⚾")
+        q = await message.channel.send(" /throw BEN 10 4 EquallyDistributed  Please receive⚾with☞/catch")
         [await q.add_reaction(i) for i in ('⚾', '✋')]  # for文の内包表記
 
         
-    elif message.content == "$th":
+    elif message.content == ".BGPT":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /throw BGPT 30 3 EquallyDistributed ☞/catchで受け取ってください⚾")
+        q = await message.channel.send(" /throw BGPT 30 3 EquallyDistributed   Please receive⚾with☞/catch⚾")
         [await q.add_reaction(i) for i in ('⚾', '✋')]  # for文の内包表記
 
         
-    elif message.content == "/t":
+    elif message.content == "チップ":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /tip JPYN 1 "f"{message.author.mention}さん gave you a Tip＄")
         [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
 
 
-    elif message.content == "/io":
+    elif message.content == "ちっぷ":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /tip BGPT 10 "f"{message.author.mention}さん gave you a Tip＄")
         [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
@@ -166,32 +166,39 @@ async def on_message(message):
         [await q.add_reaction(i) for i in ('☔', '⛈')]  # for文の内包表記
 
 
-    elif message.content == "bal":
+    elif message.content == "kenjzan":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /info jpyn ←Fill in this balance")
+        q = await message.channel.send(" /info kenj ")
         [await q.add_reaction(i) for i in ('↺', '↷')]  # for文の内包表記
 
 
-    elif message.content == "bad":
+    elif message.content == "fuck":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip dappuncoin 931 "f"{message.author.mention}さん にunkoTip＄を送りました")
-        [await q.add_reaction(i) for i in ('⭕', '💩')]  # for文の内包表記
+        q = await message.channel.send(" /tip dappuncoin 9314 "f"{message.author.mention}　💩🚫Prohibited terms💩💩")
+        [await q.add_reaction(i) for i in ('💩', '🚫')]  # for文の内包表記
 
 
-    elif message.content == "unko":
+    elif message.content == "shit":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip dappuncoin 931 "f"{message.author.mention}さん にunkoTip＄を送りました")
-        [await q.add_reaction(i) for i in ('⭕', '💩')]  # for文の内包表記
-        
-        
+        q = await message.channel.send(" /tip dappuncoin 9314 "f"{message.author.mention}💩🚫Prohibited terms💩💩")
+        [await q.add_reaction(i) for i in ('💩', '🚫')]  # for文の内包表記
+      
+    
+    elif message.content == "cunt":
+        # リアクションアイコンを付けたい
+        q = await message.channel.send(" /tip dappuncoin 9314 "f"{message.author.mention}💩🚫Prohibited terms💩💩")
+        [await q.add_reaction(i) for i in ('💩', '🚫')]  # for文の内包表記
+
+
+
 
     elif message.content == "運勢":
         # Embedを使ったメッセージ送信 と ランダムで要素を選択
         embed = discord.Embed(title="おみ", description=f"{message.author.mention}さんの今日の運勢は！",
                               color=0x2ECC69)
         embed.set_thumbnail(url=message.author.avatar_url)
-        embed.add_field(name="[GAME運勢YourFortune] ",
-                        value=random.choice(('☆☆彡超最高☆彡☆【何してもVeryGood!勝負に強い日です】','☆最高☆【チームに恵まれた日です。チャレンジしたら幸運を招きます☆彡】','やったね☆彡！【納得出来る日でしょう。金運は余り期待出来ないです。】'
+        embed.add_field(name="[運勢YourFortune] ",
+                        value=random.choice(('☆☆彡超🤩最高☆彡☆【何してもVeryGood!勝負に強い日です】','🌟最高【チームに恵まれた日です。チャレンジしたら幸運を招きます☆彡】','やったね☆彡！【納得出来る日でしょう。金運は余り期待出来ないです。】'
                                              ,'大吉【☆☆☆自信もって取り組めば必ず好成果となって返ってきます。♡♡♡恋愛運は超ベリグっ】', '中吉【☆☆好チャンス！攻めて成果あり。♡♡とりあえず問題なしかな！？】', '小吉【☆☆通常のセオリーを変化させたら好成果となる。♡♡現状から変化ない】'
                                              ,  '末吉【☆☆参加型オンラインゲームで好成果あり♡ゲームばかりじゃダメ。出会いを求めて外にでたら吉あり】', '吉【☆現状変化なし♡特に変化なし。そのままやっとけ！】',  '吉【☆まぁ！こんなもんよ】'
                                              , 'ごく普通やね【何それ！？と思うだろうがごく普通だ！棚から牡丹餅はない】', '大凶【▲▲吐き気するわ！駄目だこりゃ】'
@@ -201,11 +208,11 @@ async def on_message(message):
 
     elif message.content == "Fortune":
         # Embedを使ったメッセージ送信 と ランダムで要素を選択
-        embed = discord.Embed(title="☆OMIKUJI☆", description=f"{message.author.mention}Today!YourFortune!☆",
+        embed = discord.Embed(title="☆OMIKUJI☆Fortune☆", description=f"{message.author.mention}Today!YourFortune!☆",
                               color=0x2ECC69)
         embed.set_thumbnail(url=message.author.avatar_url)
         embed.add_field(name="[Today!YourFortune!] ",
-                        value=random.choice(('☆☆彡VeryVeryGood☆彡☆【Very Good! It ’s a very competitive day.】','☆VeryGoood!☆【It is a good day for the team. 】','Good☆彡！【It will be a convincing day. I can not expect much money.】'
+                        value=random.choice(('☆☆彡Very🤩VeryGood☆彡☆【Very Good! It ’s a very competitive day.】','☆VeryGoood!☆【It is a good day for the team. 】','Good☆彡！【It will be a convincing day. I can not expect much money.】'
                                              ,'VeryGood【☆☆☆If you work with confidence, you will always get good results. ♡♡♡ Love luck is super berig】', 'GoodDay【☆☆Good chance! There is a result of attacking. ♡♡ For the time being, there is no problem! ?】', 'Good!【☆☆ If you change the usual theory, you will get good results. ♡♡ No change from the current situation】'
                                              ,  'usuallyGood【☆☆Good results with participatory online games ♡ Not only games. Good luck if you go outside to meet】', 'good!【☆The current situation is unchanged ♡ No particular change Let it go！】',  'Good!【☆I do not need any advice】'
                                              , 'It is normal [What is that! ? You probably think that is normal! There is no peony mochi from the shelf', 'Great evil [Great evil [▲▲ I am nauseous!]'
