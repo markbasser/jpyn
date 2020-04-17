@@ -84,38 +84,38 @@ async def on_message(message):
                 
     elif message.content == "%RAIN":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain JPYN 7.77 ActiveUserOnly 🌈It Rains")
-        [await q.add_reaction(i) for i in ('☔', '🌈')]  # for文の内包表記
+        q = await message.channel.send(" /rain JPYN 7.77 ActiveUserOnly  🌈It Rains☔")
+        [await q.add_reaction(i) for i in ('<:JPYNdisco:698471276498649168>', '🌈')]  # for文の内包表記
 
         
     elif message.content == "%rain":
         # リアクションアイコンを付けたい
-        q = await message.channel.send("  /rain JPYN 10 ActiveUserOnly 🌈It Rains")
-        [await q.add_reaction(i) for i in ('🌈', '☔')]  # for文の内包表記
+        q = await message.channel.send("  /rain JPYN 10 ActiveUserOnly  🌈It Rains☔")
+        [await q.add_reaction(i) for i in ('<:JPYNdisco:698471276498649168>', '<:rain:699585875687899247>')]  # for文の内包表記
 
         
     elif message.content == "HELLO":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain BEN 7.77 ActiveUserOnly ☔It Rains")
-        [await q.add_reaction(i) for i in ('☔', '⛈')]  # for文の内包表記
+        q = await message.channel.send(" /rain BEN 7.77 ActiveUserOnly  ☔It Rains")
+        [await q.add_reaction(i) for i in ('<:BENKEICOIN04:698471407650209832>', '<:benkeicoinsl:698471387064696833>')]  # for文の内包表記
         
         
     elif message.content == "JPYN":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /tip JPYN 1.14 "f"{message.author.mention}さん gave you a Tip＄")
-        [await q.add_reaction(i) for i in ('💲', '☺')]  # for文の内包表記
+        [await q.add_reaction(i) for i in ('<:JPYNdisco:698471276498649168>', '☺')]  # for文の内包表記
   
         
     elif message.content == "BEN":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /tip ben 2 "f"{message.author.mention}さん gave you a Tip＄")
-        [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
+        [await q.add_reaction(i) for i in ('<:benkeicoinsl:698471387064696833>', '<:BENKEICOIN04:698471407650209832>')]  # for文の内包表記
         
            
     elif message.content == "$JPYN":
         # リアクションアイコンを付けたい
         q = await message.channel.send(" /tip JPYN 3 "f"{message.author.mention}さん gave you a Tip＄")
-        [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
+        [await q.add_reaction(i) for i in ('<:JPYNdisco:698471276498649168>', '<:ok1:700492571788443651>')]  # for文の内包表記
   
 
     elif message.content == "JAPAN":
@@ -132,38 +132,38 @@ async def on_message(message):
         
     elif message.content == ".BGPT":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /throw BGPT 30 3 EquallyDistributed   Please receive⚾with☞/catch⚾")
-        [await q.add_reaction(i) for i in ('⚾', '✋')]  # for文の内包表記
+        q = await message.channel.send(" /throw BGPT 30 3 EquallyDistributed   Pls receive☞/catch⚾")
+        [await q.add_reaction(i) for i in ('<:JPYNdisco:698471276498649168>', '✋')]  # for文の内包表記
 
         
     elif message.content == "チップ":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip JPYN 1 "f"{message.author.mention}さん gave you a Tip＄")
-        [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
+        q = await message.channel.send(" /tip JPYN 1 "f"{message.author.mention}さん  gave you a Tip＄")
+        [await q.add_reaction(i) for i in ('<:JPYNdisco:698471276498649168>', '☺')]  # for文の内包表記
 
 
     elif message.content == "ちっぷ":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /tip BGPT 10 "f"{message.author.mention}さん gave you a Tip＄")
-        [await q.add_reaction(i) for i in ('⭕', '☺')]  # for文の内包表記
+        q = await message.channel.send(" /tip BGPT 10 "f"{message.author.mention}さん  gave you a Tip＄")
+        [await q.add_reaction(i) for i in ('<:BGPT02:698471366004965406>', '<:ok1:700492571788443651>')]  # for文の内包表記
 
 
     elif message.content == "/r":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain JPYN 6 ActiveUserOnly ☔It Rains")
-        [await q.add_reaction(i) for i in ('☔', '⛈')]  # for文の内包表記
+        q = await message.channel.send(" /rain JPYN 6 ActiveUserOnly  ☔It Rains🌈")
+        [await q.add_reaction(i) for i in ('<:JPYNdisco:698471276498649168>', '🌈')]  # for文の内包表記
 
         
     elif message.content == "$r":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain BGPT 10 ActiveUserOnly ☔It Rains")
-        [await q.add_reaction(i) for i in ('☔', '⛈')]  # for文の内包表記
+        q = await message.channel.send(" /rain BGPT 10 ActiveUserOnly  🌈It Rains ☔")
+        [await q.add_reaction(i) for i in ('<:BGPT02:698471366004965406>', '<:good:699580636448423936>')]  # for文の内包表記
     
         
     elif message.content == "/R":
         # リアクションアイコンを付けたい
-        q = await message.channel.send(" /rain BGPT 50 ActiveUserOnly ☔It Rains")
-        [await q.add_reaction(i) for i in ('☔', '⛈')]  # for文の内包表記
+        q = await message.channel.send(" /rain BGPT 50 ActiveUserOnly  🌈It Rains☔")
+        [await q.add_reaction(i) for i in ('<:BGPT02:698471366004965406>', '<:good01:699581068285706301>')]  # for文の内包表記
 
 
     elif message.content == "kenjzan":
