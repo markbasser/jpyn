@@ -81,7 +81,8 @@ async def on_message(message):
     if message.content == "jp/sprts":
         # チャンネルへメッセージを送信
         await message.channel.send("/tip SPRTS 100 "f"{message.author.mention}　 🔑<:BGPT02:698471366004965406> Thank you♡")  # f文字列（フォーマット済み文字列リテラル）
-     if message.content == "sb/jpyn":
+    
+    if message.content == "sb/jpyn":
         # チャンネルへメッセージを送信
         await message.channel.send("/tip JPYN 10 "f"{message.author.mention}　 🔑<:JPYNdisco:698471276498649168> ")  # f文字列（フォーマット済み文字列リテラル）
        
@@ -274,7 +275,7 @@ async def on_message(message):
         await message.channel.send(embed=embed)
 
 
-    elif message.content == "ortune":
+    elif message.content == "fortune":
         # Embedを使ったメッセージ送信 と ランダムで要素を選択
         embed = discord.Embed(title="☆OMIKUJI☆Fortune☆", description=f"{message.author.mention}Today!YourFortune!☆",
                               color=0x2ECC69)
